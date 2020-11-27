@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apropos</title>
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/fontawesome.min.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/about.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light text-uppercase font-weight-bold">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img width="150" src="./../imgs/logo.jpg" alt="#" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="show-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html">Acueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">produit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team"> services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                    <li class="nav-item search">
+                        <a class="nav-link"><i class="fas fa-search"></i></a>
+                        <form>
+                            <input type="search">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="about-us">
+
+            <strong class="text-uppercase" id="about">A propos</strong>
+            <h2 class="text-uppercase">Concept de l’entreprise <span>LE JUTEUX</span></h2>
+            <p>Production et commercialisation du yaourt enrichi au lait végétal notamment le coco et souchet. Le yaourt enrichir au lait végétal est un yaourt très délicieux deux fois plus riche que celui aromatiser ce yaourt avec des aptitudes médicinal
+                <q> aphrodisiaque régule l’hypertension artériel rafraichir la mémoiree</q> et garantir la bonne croissance des enfants ce type de yaourt est recherché sur le marché béninois peu en produisent. </p>
+
+            <h2 class="text-uppercase">Concept de <span>LE JUTEUX</span></h2>
+            <p>Le Juteux est une entreprise spécialisée dans la transformation agroalimentaire yaourt et jus de fruit, offre également des prestations de service tel que l’installation et l’entretien des plantations forestières et des ruches apicoles, puis
+                nous donnons des formations parascolaires.</p>
+        </div>
+    </div>
+    <div class="registre">
+        <address>Adresse Parakou Gbira +229 91688668</address>
+        <p><b>IFU:</b> 0201810392866 <b>RCCM</b> RB/PKO/18A5253</p>
+    </div>
+    </div>
+    <footer>
+        <div class="main-part">
+            <div class="container">
+                <div class="d-flex justify-content-between text-uppercase">
+                    <div>Le Juteux</div>
+                    <ul class="main-list">
+                        <li><a href="./../index.html">acueil</a></li>
+                        <li><a href="#about">a propos </a></li>
+                        <li><a href="./../index.html">nos produits</a></li>
+                        <li><a href="./../index.html">services </a></li>
+
+                        <li><a href="./../index.html#contact">contact nous</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <form>
+                        <label>
+                                News letter
+                                <input type="text" placeholder="Your email">
+                                <input type="submit" value="Subscribe">
+                            </label>
+                    </form>
+                    <p>Enregistrez-vous pour recevoire nos notifictions sur les nouveaux produits et services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>Copyright &copy 2020 Designer par <a href="https://html.design">Lejoyau Company</a> Tout droit revesé</p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+
+            'use strict';
+
+            $('.navbar ul.navbar-nav li.search a').on('click', function() {
+                $(this).siblings('form').fadeToggle();
+            });
+
+            $('.navbar ul.navbar-nav li a, footer ul.main-list li a').on('click', function(e) {
+
+                var getAttr = $(this).attr('href');
+
+                e.preventDefault();
+                $('html').animate({
+                    scrollTop: $(getAttr).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+
+</html>
