@@ -188,29 +188,19 @@
     <div class="contact" id="contact">
         <div class="container">
             <div class="contact-form">
-
                 <form type="post">
                     <input type="text" placeholder="Your name">
                     <input type="text" placeholder="Phone number">
                     <input type="text" placeholder="Select service">
                     <input type="email" placeholder="Email">
                     <textarea placeholder="Message"></textarea>
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send" id="posted">
                 </form>
+                <div id="submaitedform"></div>
             </div>
         </div>
     </div>
-    <div>
-        <form action="" method="post" ng-app="postApp">
-            <input type="image" src="" alt="imges" placeholder="images">
-            <input type="file" name="image" id="imgpost"> <br>
-            <textarea name="comment" id="postComment" cols="30" rows="10"></textarea> <br>
-            <button type="submit">Posté</button>
-        </form>
-        <div class="contents" ng-controller="postComponentController">
-            <post-component></post-component>
-        </div>
-    </div>
+
     <footer>
         <div class="main-part">
             <div class="container">
@@ -248,6 +238,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="./app/postComponent.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/post.js"></script>
 </body>
 
 </html>
