@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fdfaf7;
+}
+
+h1 {
+  color: #5b1f00;
+  margin: 25px;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.contact {
+  background: transparent;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.contact-form {
+  padding: 5px;
+  background-color: #b96e48;
+  border-radius: 5px;
+}
+
+.contact-form span {
+  text-align: center;
+  color: #fff;
+  display: block;
+  background-color: #212121;
+  opacity: .8;
+  border-radius: 5px;
+}
+
+.address {
+  text-align: center;
+  background-color: #eecebe;
+  border: solid #743414;
+  margin: 25px auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.address address {
+  font-weight: 800;
+  font-style: italic;
+}
+/*# sourceMappingURL=contacts.css.map */

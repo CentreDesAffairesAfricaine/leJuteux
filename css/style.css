@@ -342,29 +342,34 @@ header .row>div:last-of-type button a {
         background-image: url('../imgs/affiche\ fruit\ grand.jpg');
     }
     50% {
-        background-image: url('../imgs/affich\ yaouts.jpg');
+        background-image: url('../imgs/newAffiche.jpg');
     }
     75% {
-        background-image: url('../imgs/coocktail.jpg');
+        background-image: url('../imgs/icien.jpg');
     }
     100% {
-        background-image: url('../imgs/affiche\ yaourt\ jus\ moyen.jpg');
+        background-image: url('../imgs/yaourtsJuteux.jpg');
     }
 }
 
 .what-we-do .img {
     animation-name: myMovingImages;
-    animation-duration: 15s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     height: 300px;
     width: 400px;
+    margin: 0 auto;
     box-shadow: 3px 3px 10px #d9d5d5, -3px -3px 10px #d9d5d5;
     background-size: cover;
 }
 
 
 /* prices */
+
+.prices {
+    margin-bottom: 25px;
+}
 
 .prices h2 {
     margin-bottom: 100px;
@@ -456,58 +461,71 @@ header .row>div:last-of-type button a {
     margin-top: 30px;
 }
 
+@keyframes myAmine {
+    0% {
+        background-image: url('../imgs/mielBoitPlastNiet.png');
+        filter: brightness(125%);
+        filter: saturate(150%);
+        filter: contrast(125%);
+    }
+    20% {
+        background-image: url('../imgs/planteAnacardier.jpg');
+        filter: brightness(125%);
+        filter: saturate(150%);
+        filter: contrast(125%);
+    }
+    40% {
+        background-image: url('../imgs/plantation.png');
+        filter: brightness(125%);
+        filter: saturate(150%);
+        filter: contrast(125%);
+    }
+    60% {
+        background-image: url('../imgs/anacardiers.png');
+        filter: brightness(150%);
+        filter: saturate(150%);
+        filter: contrast(125%);
+    }
+    80% {
+        background-image: url('../imgs/apiculteur.png');
+        filter: brightness(125%);
+        filter: saturate(150%);
+        filter: contrast(125%);
+    }
+    100% {
+        background-image: url('../imgs/MielBoit.png');
+        filter: brightness(125%);
+        filter: saturate(150%);
+        filter: contrast(125%);
+    }
+}
+
+.prices .anime {
+    animation-name: myAmine;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    height: 350px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #d9d5d5, -3px -3px 10px #d9d5d5;
+    background-size: cover;
+}
+
 
 /* contact */
 
 .contact {
-    background-image: url('../imgs/contact.jpg');
+    margin-top: 25px;
+    background-color: #eecebe;
     background-size: cover;
 }
 
 .contact .container {
+    margin-top: 50px;
     padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.contact .contact-form {
-    background-color: rgba(44, 115, 232, .65);
-    padding: 30px;
-    width: 40%;
-}
-
-.contact .contact-form input {
-    margin-bottom: 20px;
-    padding: 5px 10px;
-}
-
-.contact .contact-form input[type='text'] {
-    width: 48%;
-}
-
-.contact .contact-form input:nth-of-type(3) {
-    float: right;
-}
-
-.contact .contact-form input:first-of-type,
-.contact .contact-form input[type="email"],
-.contact .contact-form textarea {
-    width: 100%;
-}
-
-.contact .contact-form textarea {
-    resize: none;
-    height: 150px;
-    padding: 5px 10px;
-}
-
-.contact .contact-form input[type="submit"] {
-    margin-bottom: 0;
-    margin-top: 10px;
-    background-color: #e84708;
-    border: none;
-    padding: 10px 30px;
-    color: #FFF;
-    cursor: pointer;
 }
 
 
@@ -834,4 +852,13 @@ footer .copyright p a {
     footer .d-flex+div form input[type="submit"] {
         width: 40%
     }
+}
+
+
+}
+
+}
+
+}
+
 }
